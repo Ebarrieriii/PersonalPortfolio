@@ -1,0 +1,226 @@
+/* Reset and basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Ensure body and html are 100% height for full-page layout */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Left Panel Styling */
+.left-panel {
+    flex: 1;
+    max-width: 45%; 
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.desc {
+    font-size: 1.2rem; 
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.location {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Style for the content box */
+.content-box {
+    max-width: 79%; /* Adjust the width as needed */
+    margin: 10rem auto; /* Centers the box horizontally */
+    padding: 20px; /* Add spacing inside the box */
+    color: #ffffff; /* White text inside the box */
+    text-align: center; /* Center text inside the box */
+}
+
+.profile-picture {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Creates the circular effect */
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+    margin-bottom: 15px; /* Adds spacing below the image */
+    border: 3px solid #444444; /* Match the dark theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a polished look */
+}
+
+
+/* Right Panel Styling */
+.right-panel {
+    flex: 1; /* Takes up 50% of the viewport width */
+    max-width: 65%; /* Enforces a cap on width */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+.right-panel-content-box {
+    margin-top: 10rem;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.socials a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.socials a:hover {
+    color: #0056a3;
+    text-decoration: underline;
+}
+
+.skills {
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; /* Add space between the line and the content */
+    position: relative;
+}
+
+.skill-tags {
+    margin-bottom: 15px; /* Space between categories */
+}
+
+/* Common Tag Styling */
+.tag {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Front-End Tags */
+.front-end .tag {
+    background-color: #4CAF50; /* Green */
+    color: #ffffff;
+}
+
+.front-end .tag:hover {
+    background-color: #45a049; /* Darker Green on hover */
+}
+
+/* Back-End Tags */
+.back-end .tag {
+    background-color: #2196F3; /* Blue */
+    color: #ffffff;
+}
+
+.back-end .tag:hover {
+    background-color: #1976D2; /* Darker Blue on hover */
+}
+
+/* Database Tags */
+.database .tag {
+    background-color: #FF9800; /* Orange */
+    color: #ffffff;
+}
+
+.database .tag:hover {
+    background-color: #FB8C00; /* Darker Orange on hover */
+}
+
+/* DevOps Tags */
+.devops .tag {
+    background-color: #9C27B0; /* Purple */
+    color: #ffffff;
+}
+
+.devops .tag:hover {
+    background-color: #7B1FA2; /* Darker Purple on hover */
+}
+
+/* Cloud Tags */
+.cloud .tag {
+    background-color: #00BCD4; /* Cyan */
+    color: #ffffff;
+}
+
+.cloud .tag:hover {
+    background-color: #0097A7; /* Darker Cyan on hover */
+}
+
+/* Title and Headers */
+.skills h1, .skills h2 {
+    color: #ffffff; /* Matches the dark theme */
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;  /* Center the items horizontally */
+    align-items: center;      /* Center the items vertically if necessary */
+    flex-wrap: wrap;          /* Allow the items to wrap to the next line if needed */
+}
+
+.social-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    color: #00BCD4; /* Change color on hover */
+}
+.social-link i:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Align the line to the left side */
+    top: 0;
+    bottom: 0;
+    width: 3px; /* Line thickness */
+    background-color: #ffffff; /* Line color */
+}

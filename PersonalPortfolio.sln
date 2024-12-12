@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{3E59F891-9C64-4BDD-8709-70C71BAFAD3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalPortfolio.UI", "PersonalPortfolio.UI\PersonalPortfolio.UI.csproj", "{3E59F891-9C64-4BDD-8709-70C71BAFAD3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

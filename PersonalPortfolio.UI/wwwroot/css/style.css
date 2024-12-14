@@ -224,3 +224,28 @@ h1, h2 {
     width: 3px; /* Line thickness */
     background-color: #ffffff; /* Line color */
 }
+
+.experience::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Align the line to the left side */
+    top: 0;
+    bottom: 0;
+    width: 3px; /* Line thickness */
+    background-color: #ffffff; /* Line color */
+}
+
+.experience h1, .experience h2 {
+    color: #ffffff; /* Matches the dark theme */
+    margin-bottom: 3rem;
+}
+
+.experience {
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; /* Add space between the line and the content */
+    position: relative;
+}

@@ -1,7 +1,125 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
-
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<div class="container">
+    <div class="left-panel">
+        <div class="content-box">
+            <img src="me.png" alt="Picture of Myself" class="profile-picture">
+            <h1 class="name">Edward Barrier III</h1>
+            <h5 class="desc">Full-Stack .NET Developer with over 3 years of experience</h5>
+            <p class="location"><span>📍</span> Kansas City, Missouri</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/edwardbarrieriii/" target="_blank" class="social-link">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ebarrieriii" target="_blank" class="social-link">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="path_to_your_resume.pdf" download class="social-link">
+                    <i class="fa fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="right-panel-content-box">
+            <div class="skills">
+                <h1>Skills</h1>
+                <h2>Front-End</h2>
+                <div class="skill-tags front-end">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+                <h2>Back-End</h2>
+                <div class="skill-tags back-end">
+                    <span class="tag">C#</span>
+                    <span class="tag">Api</span>
+                    <span class="tag">Entity Framework Core</span>
+                    <span class="tag">Dapper</span>
+                    <span class="tag">LINQ</span>
+                </div>
+                <h2>Database</h2>
+                <div class="skill-tags database">
+                    <span class="tag">Microsoft SQL Server</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+                <h2>DevOps</h2>
+                <div class="skill-tags devops">
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Azure DevOps</span>
+                    <span class="tag">Automated Testing</span>
+                    <span class="tag">Docker</span>
+                </div>
+                <h2>Cloud</h2>
+                <div class="skill-tags cloud">
+                    <span class="tag">Azure</span>
+                    <span class="tag">Azure Service Bus</span>
+                    <span class="tag">Azure Storage</span>
+                    <span class="tag">Azure App Service</span>
+                    <span class="tag">Azure Container Instance</span>
+                    <span class="tag">Azure SQL</span>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+<div class="experience" style="justify-content: left;">
+    <h1>Experience</h1>
+    <MudTimeline Align="left">
+        <MudTimelineItem Color="Color.Success" Size="Size.Small">
+            <ItemOpposite>
+                <MudText Color="Color.Tertiary" Typo="Typo.h5">Dec 2023 - Current</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Tickets For Less</MudText>
+                <MudText>Creating internal tools for stakeholders to help business processes be more efficient. Learned automated deployments with Docker and Azure Container Services as
+                    well as other CI/CD methods.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem HideDot="true"></MudTimelineItem>
+        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
+            <ItemOpposite>
+                <MudText Color="Color.Tertiary" Typo="Typo.h5">Dec 2022 - Dec 2023</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Production Data</MudText>
+                <MudText>Built creative solutions for several cement site managers using .NET Core MVC. Learned how to build
+                    automated processes with SQL Triggers, Stored Procedures, and PowerShell Scripts.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem HideDot="true"></MudTimelineItem>
+        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
+            <ItemOpposite>
+                <MudText Color="Color.Tertiary" Typo="Typo.h5">Mar 2022 - Aug 2022</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Nations Title</MudText>
+                <MudText>Started building full-stack enterprise .NET Core applications using MVC and Sql Server</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem HideDot="true"></MudTimelineItem>
+        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
+            <ItemOpposite>
+                <MudText Color="Color.Tertiary" Typo="Typo.h5">Oct 2021 - Mar 2022</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">All About Doors & Windows</MudText>
+                <MudText>Built dynamic E-Commerce websites using Shopify and front-end languages.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+        <MudTimelineItem HideDot="true"></MudTimelineItem>
+        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
+            <ItemOpposite>
+                <MudText Color="Color.Tertiary" Typo="Typo.h5">Mar - Jun 2021</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Centriq Training</MudText>
+                <MudText>Learned the fundamentals of software development. Building projects using HTML, CSS, JavaScript, jQuery, Responsive Web Design, Bootstrap, React, C#, LINQ, MVC, Entity Framework, and SQL.</MudText>
+            </ItemContent>
+        </MudTimelineItem>
+    </MudTimeline>
+</div>
+        </div>
+    </div>
+</div>

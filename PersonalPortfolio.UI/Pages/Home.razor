@@ -7,6 +7,9 @@
             <h1 class="name">Edward Barrier III</h1>
             <h5 class="desc">Full-Stack .NET Developer with over 3 years of experience</h5>
             <p class="location"><span>📍</span> Kansas City, Missouri</p>
+
+            <div class="divider"></div> <!-- Subtle divider -->
+            
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/edwardbarrieriii/" target="_blank" class="social-link">
                     <i class="fa fa-linkedin"></i>
@@ -22,7 +25,7 @@
     </div>
     <div class="right-panel">
         <div class="right-panel-content-box">
-            <div class="skills">
+            <div class="skills card">
                 <h1>Skills</h1>
                 <h2>Front-End</h2>
                 <div class="skill-tags front-end">
@@ -64,62 +67,95 @@
             <br/>
             <br/>
             <br/>
-<div class="experience" style="justify-content: left;">
-    <h1>Experience</h1>
-    <MudTimeline Align="left">
-        <MudTimelineItem Color="Color.Success" Size="Size.Small">
-            <ItemOpposite>
-                <MudText Color="Color.Tertiary" Typo="Typo.h5">Dec 2023 - Current</MudText>
-            </ItemOpposite>
-            <ItemContent>
-                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Tickets For Less</MudText>
-                <MudText>Creating internal tools for stakeholders to help business processes be more efficient. Learned automated deployments with Docker and Azure Container Services as
-                    well as other CI/CD methods.</MudText>
-            </ItemContent>
-        </MudTimelineItem>
-        <MudTimelineItem HideDot="true"></MudTimelineItem>
-        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
-            <ItemOpposite>
-                <MudText Color="Color.Tertiary" Typo="Typo.h5">Dec 2022 - Dec 2023</MudText>
-            </ItemOpposite>
-            <ItemContent>
-                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Production Data</MudText>
-                <MudText>Built creative solutions for several cement site managers using .NET Core MVC. Learned how to build
-                    automated processes with SQL Triggers, Stored Procedures, and PowerShell Scripts.</MudText>
-            </ItemContent>
-        </MudTimelineItem>
-        <MudTimelineItem HideDot="true"></MudTimelineItem>
-        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
-            <ItemOpposite>
-                <MudText Color="Color.Tertiary" Typo="Typo.h5">Mar 2022 - Aug 2022</MudText>
-            </ItemOpposite>
-            <ItemContent>
-                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Nations Title</MudText>
-                <MudText>Started building full-stack enterprise .NET Core applications using MVC and Sql Server</MudText>
-            </ItemContent>
-        </MudTimelineItem>
-        <MudTimelineItem HideDot="true"></MudTimelineItem>
-        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
-            <ItemOpposite>
-                <MudText Color="Color.Tertiary" Typo="Typo.h5">Oct 2021 - Mar 2022</MudText>
-            </ItemOpposite>
-            <ItemContent>
-                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">All About Doors & Windows</MudText>
-                <MudText>Built dynamic E-Commerce websites using Shopify and front-end languages.</MudText>
-            </ItemContent>
-        </MudTimelineItem>
-        <MudTimelineItem HideDot="true"></MudTimelineItem>
-        <MudTimelineItem Color="Color.Primary" Size="Size.Small">
-            <ItemOpposite>
-                <MudText Color="Color.Tertiary" Typo="Typo.h5">Mar - Jun 2021</MudText>
-            </ItemOpposite>
-            <ItemContent>
-                <MudText Color="Color.Primary" Typo="Typo.h4" GutterBottom="true">Centriq Training</MudText>
-                <MudText>Learned the fundamentals of software development. Building projects using HTML, CSS, JavaScript, jQuery, Responsive Web Design, Bootstrap, React, C#, LINQ, MVC, Entity Framework, and SQL.</MudText>
-            </ItemContent>
-        </MudTimelineItem>
-    </MudTimeline>
-</div>
+            <div class="experience card">
+                <h1>Experience</h1>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>Tickets For Less</h2>
+                        <p class="job-dates">Dec 2023 - Current</p>
+                    </div>
+                    <ul>
+                        <li>Deployed scalable web jobs on Azure App Services for backend automation.</li>
+                        <li>Designed and managed databases with Entity Framework Core and SQL Server.</li>
+                        <li>Developed and deployed C# applications in Docker containers hosted with Azure Container Instances and automated via Azure DevOps pipelines.</li>
+                        <li>Established automated unit testing integrated into DevOps pipelines to maintain code quality.</li>
+                        <li>Built CI/CD pipelines with Azure DevOps for seamless builds and deployments.</li>
+                        <li>Created APIs and automated backend processes triggered by timers or events.</li>
+                    </ul>
+
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>Production Data</h2>
+                        <p class="job-dates">Dec 2023 - Dec 2024</p>
+                    </div>
+                    <ul>
+                        <li>Developed .NET Core API backends.</li>
+                        <li>Automated processes with SQL Triggers, Stored Procedures, and PowerShell scripts.</li>
+                        <li>Managed 10 Windows VM servers for deployments and maintenance.</li>
+                        <li>Translated several site managers' needs into .NET Core MVC and web form solutions.</li>
+                        <li>Established end-to-end CI/CD using Azure DevOps pipelines.</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>Nations Title</h2>
+                        <p class="job-dates">Mar 2022 - Aug 2022</p>
+                    </div>
+                    <ul>
+                        <li>Developed RESTful Web APIs utilizing JSON.</li>
+                        <li>Established and managed online repositories while leveraging Git in conjunction with Azure DevOps.</li>
+                        <li>Collaborated within a Kanban process, using Jira for project tracking.</li>
+                        <li>Applied Service Oriented Architecture principles to write maintainable and modular code.</li>
+                        <li>Constructed optimized SQL queries for integration with the chosen ORM.</li>
+                        <li>Built full-stack web applications using .NET Core MVC.</li>
+                        <li>Maintained and enhanced features of legacy software, contributing to .NET Framework applications.</li>
+                    </ul>
+
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>All About Doors & Windows</h2>
+                        <p class="job-dates">Oct 2021 - Mar 2022</p>
+                    </div>
+                    <ul>
+                        <li>Architect, develop, and uphold dynamic websites, employing front-end technologies, while integrating them with Netsuite's robust backend.</li>
+                        <li>Craft captivating websites through the synergy of LiquidJS, HTML, CSS, and JavaScript/jQuery, integrated with the Shopify platform.</li>
+                        <li>Collaborate with management to develop e-commerce strategies and to integrate these strategies into web applications.</li>
+                        <li>Utilize jQuery to enhance interactivity and dynamic content on web pages.</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="experience card">
+                <h1>Education</h1>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>Centriq Training</h2>
+                        <p class="job-dates">Mar 2021 - Jun 2021</p>
+                    </div>
+                    <ul>
+                        <li>Focus on .NET framework with 40-hour weeks dedicated to project development</li>
+                        <li>Gained proficiencies in HTML, CSS, JavaScript, jQuery, Bootstrap, and React</li>
+                        <li>Developed skills in C#, LINQ, MVC, Entity Framework, and SQL</li>
+                        <li>Enhanced expertise in Responsive Web Design and front-end technologies</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h2>Metropolitan Community College</h2>
+                        <p class="job-dates">Aug 2017 - Jan 2021</p>
+                    </div>
+                    <ul>
+                        <li>Gained hands-on experience with C++, HTML, CSS, and JavaScript</li>
+                        <li>Built a strong technical foundation in programming and development</li>
+                        <li>Developed problem-solving and analytical skills through a broad general education</li>
+                        <li>Discovered my passion for a career in software development</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

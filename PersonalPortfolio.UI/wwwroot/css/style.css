@@ -2,9 +2,16 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text for contrast */
+    font-family: 'Roboto', sans-serif;
     height: 100%; /* Full height */
     overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+:root {
+    --accent-color: #003366; /* Darkish purple */
+    --accent-hover: #6a0dad; /* Slightly darker for hover */
 }
 
 h1:focus {
@@ -18,10 +25,26 @@ h1:focus {
     overflow: hidden; /* Prevent overflow */
 }
 
+.about-me {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about-me ul {
+    margin-top: 1rem;
+}
+
+.about-me li {
+    margin-bottom: 10px;
+    list-style-type: circle !important;
+    margin-left: 2rem;
+}
+
 .left-panel {
     flex: 1;
     max-width: 45%; /* Restricts its width to 45% of the parent container */
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    /*background: linear-gradient(135deg, #1a1a1a, #2a2a2a);*/
     color: #ffffff;
     padding: 20px;
     position: sticky;
@@ -30,9 +53,12 @@ h1:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);*/
     overflow: hidden; /* Ensure no content spills out */
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1a1a1a; /* Dark gray background */
+    border-right: 2px solid #003366; /* Purple border */
+    box-shadow: 4px 0 8px rgba(138, 43, 226, 0.2); /* Subtle purple shadow */
 }
 
 
@@ -78,8 +104,8 @@ h1:focus {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Minimalist border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border: 3px solid #003366; /* Purple border */
+    box-shadow: 0 8px 16px rgba(0, 51, 102, 0.4);
 }
 
 .right-panel {
@@ -94,7 +120,7 @@ h1:focus {
 }
 
 .right-panel-content-box {
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 /* Section Styling */
@@ -135,7 +161,6 @@ h1, h2 {
     margin-bottom: 15px; /* Space between categories */
 }
 
-/* Common Tag Styling */
 .tag {
     display: inline-block;
     padding: 6px 10px;
@@ -149,67 +174,37 @@ h1, h2 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Front-End Tags */
-.front-end .tag {
-    background-color: #4CAF50; /* Green */
+.skill-tags .tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #555555;
     color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.front-end .tag:hover {
-    background-color: #45a049; /* Darker Green on hover */
+.skill-tags .tag:hover {
+    background-color: #666666;
+    transform: scale(1.05);
 }
 
-/* Back-End Tags */
-.back-end .tag {
-    background-color: #2196F3; /* Blue */
-    color: #ffffff;
-}
-
-.back-end .tag:hover {
-    background-color: #1976D2; /* Darker Blue on hover */
-}
-
-/* Database Tags */
-.database .tag {
-    background-color: #FF9800; /* Orange */
-    color: #ffffff;
-}
-
-.database .tag:hover {
-    background-color: #FB8C00; /* Darker Orange on hover */
-}
-
-/* DevOps Tags */
-.devops .tag {
-    background-color: #9C27B0; /* Purple */
-    color: #ffffff;
-}
-
-.devops .tag:hover {
-    background-color: #7B1FA2; /* Darker Purple on hover */
-}
-
-/* Cloud Tags */
-.cloud .tag {
-    background-color: #00BCD4; /* Cyan */
-    color: #ffffff;
-}
-
-.cloud .tag:hover {
-    background-color: #0097A7; /* Darker Cyan on hover */
-}
 
 /* Title and Headers */
 .skills h1 {
-    font-family: 'Merriweather', serif; /* Apply Merriweather to title */
-    color: #ffffff; /* Matches the dark theme */
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 2.4rem;
 }
 
 .skills h2 {
-    font-family: 'Roboto', serif; /* Apply Merriweather to title */
-    color: #ffffff; /* Matches the dark theme */
+    font-family: 'Roboto', serif;
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -225,27 +220,33 @@ h1, h2 {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5rem;
-    transition: transform 0.2s ease, color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link i {
     margin-right: 8px;
 }
 
-.social-link:hover {
-    transform: scale(1.1); /* Minimal hover effect */
-    color: #00BCD4; /* Vibrant accent color */
+a:hover, .social-link:hover {
+    color: var(--accent-hover);
+    transform: scale(1.1);
 }
 
 .social-link i:hover {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2);
 }
 
 .divider {
-    width: 80%; /* Reduce width to fit neatly */
-    height: 1px; /* Keep the line thin */
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle color */
-    margin: 20px auto; /* Center it horizontally */
+    width: 80%; /* Keep it centered and proportionate */
+    height: 1px; /* Thin, elegant line */
+    background-color: #003366; 
+    margin: 20px auto; /* Center it horizontally with space around */
+    opacity: 0.8; /* Slight transparency for subtlety */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.divider:hover {
+    opacity: 1; /* Fully opaque on hover */
 }
 
 .experience h1, .experience h2 {
@@ -328,18 +329,18 @@ h1, h2 {
 }
 
 .card {
-    background-color: #2a2a2a; /* Dark background to match the theme */
-    border-radius: 10px; /* Rounded corners for the card */
-    padding: 20px; /* Padding inside the card */
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
-    margin-bottom: 20px; /* Space between cards */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for separation */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    background-color: #2a2a2a; /* Dark card background */
+    border-left: 5px solid var(--accent-color); /* Accent border */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--accent-color);
 }
 
 /* Update right-panel-content-box to use the card class */

@@ -348,3 +348,71 @@ a:hover, .social-link:hover {
 .right-panel-content-box .experience {
     margin-bottom: 2px;
 }
+
+/* Testimonials */
+.testimonial-card {
+    position: relative;
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 51, 102, 0.4);
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-card .author {
+    color: #4da4ff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card .read-more {
+    font-size: 0.85rem;
+    color: #4da4ff;
+    text-decoration: none;
+}
+
+.testimonial-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.testimonial-card .quote::before {
+    content: "“";
+    font-size: 3rem;
+    color: var(--accent-color);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    opacity: 0.2;
+    pointer-events: none;
+}
